@@ -1,0 +1,130 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7E4D4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 520px){
+       padding: 20px
+    }
+
+    h1{
+        margin-bottom: 30px;
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+        color: #467745;
+       
+        @media (max-width: 520px){
+            width: calc(100% - 40px);
+            font-size: 36px;
+            text-align: start;
+        }
+
+        @media (min-width: 521px){
+            width: 50%;
+            font-size: 48px;
+            text-align: center;
+        }
+    }
+
+    input{
+        width: 50%;
+        max-width: 480px;
+        height: 64px;
+        margin-bottom: 30px;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #fff;
+
+        @media (max-width: 520px){
+            width: calc(100% - 40px);
+        }
+    }
+
+    input::placeholder{
+        color: #467745;
+    }
+
+    textarea{
+        width: 50%;
+        max-width: 480px;
+        height: 120px;
+        margin-bottom: 30px;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #fff;
+
+
+        @media (max-width: 520px){
+            width: calc(100% - 40px);
+        }
+        
+    }
+    textarea::placeholder{
+        color: #467745;
+    }
+
+    div{
+        width: 50%;
+        max-width: 480px;
+        display: grid;
+        grid-template-columns: 20px auto;
+        grid-gap: 25px;
+        align-items: center;
+        margin-bottom: 30px;
+        label{
+            overflow-wrap: normal;
+            align-content: space-around;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #467745;
+
+            a{
+                text-decoration: underline;
+            }
+    
+        }
+        
+        #cbox{
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border: none;
+            outline: none;
+        }
+
+        @media (max-width: 520px){
+            width: 100%;
+            margin-left: 20px;
+        }
+
+    }
+
+    button{
+        width: 30%;
+        max-width: 280px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 21px;
+        letter-spacing: 0.2em;
+        border-radius: 40px;
+        background-color: #467745;
+        color: #F7E4D4;
+
+        @media (max-width: 520px){
+            width: 75%;
+        }
+    }
+}
